@@ -1,0 +1,7 @@
+<%=session[:cart]%>
+
+<%= form_tag(url: "/", method: "post") do %>
+<%= label_tag(:product, "Enter a name")%>
+<%= text_field_tag(:product)%>
+<%= submit_tag("add to cart")%>
+<%end%>
